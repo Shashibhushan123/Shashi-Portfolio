@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashi Portfolio Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div class="header" id="home">
+        <div class="container">
+            <nav>
+                <img src="./img/Shashilogo1.png" class="logo">
+                <ul id="sideMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolios">Portfolios</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Complete IT Solution Provider</p>
+                <h2>Hi, I'm <span class="text-red">Shashi Kushwaha</span> </h2>
+                <h2>& I am </h2>
+                 <h2><span id="element"></span></h2>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/web2.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>A versatile and detail-oriented Developer as well as IT Support Provider hands on experience 4 years + experiene in tech field like Computer hardware and Networking support
+                        and now I switch my profile to development side and I also create quite of websites
+                        to the using of React, JavaScript, Html, CSS and other things.Strong background in building responsive, cross- platform applications with an emphasis on user experience (UX) and performance.
+                    </p>
+                   <!-- <p>A versatile and detail-oriented Developer and Graphics Designer with 3 years of hands-on experience in creating visually stunning designs and developing user- friendly web applications. Proficient in development tools, while also skilled in Adobe Creative Suite (Photoshop, Illustrator) for designing logos, marketing materials, and user interfaces. Strong background in building responsive, cross- platform applications with an emphasis on user experience (UX) and performance.</p> -->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab skill" id="skills">
+                        <!-- <ul> -->
+                            <li>
+                                <h3>HTML</h3>
+                                <span class="bar1" ><span class="html" id="green"></span></span>
+                                
+                            </li>
+                            <li>
+                                <h3>CSS</h3>
+                                <span class="bar2" id="blue"><span class="css"></span></span>
+                            </li>
+                            <li>
+                                <h3>JavaScript</h3>
+                                <span class="bar3" id="red"><span class="js"></span></span>
+                            </li>
+                            <li>
+                                <h3>React JS</h3>
+                                <span class="bar4" id="yellow"><span class="react"></span></span>
+                            </li>
+                                
+                        <!-- </ul> -->
+                       </div>
+                    <div class="tab-contents" id="experience" >
+                        <ul>
+                            <li><span>HCL Technologies Pvt. Ltd. </span><br>Service Desk Specialist <span class="text-red">(Dec 2024 - Present)</span></li>
+                            <li><span>IGNOU </span><br>Full Stack Developer Intern<span class="text-red">(Aug 2024 - Nov 2024)</span></li>
+                            <li><span>CNB Finwiz Pvt. Ltd. </span><br>Network Engineer <span class="text-red">(Jan 2024 - July 2024)</span></li>
+                            <li><span>AVC Systems Solution Pvt. Ltd.</span><br>IT Support Engineer <span class="text-red">(July 2021 - Nov 2023)</span></li>
+                            <li><span>Microsign Systems</span><br>Hardware Engineer <span class="text-red">(Jun 2020 - Jul 2021)</span></li>         
+                            <li><span>Hpe</span><br>Adroid Developer <span class="text-red">(Dec 2019 - Apr 2020)</span> </li>         
+                        </ul>
+                       </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>MCA</span><br>Mangalayatan University <span class="text-red"> (Jan 2025- Dec 2026)</span></li>
+                            <li><span>BCA</span><br>Indira Gandhi National Open University <span class="text-red"> (Jul 2021 - Jul 2024)</span></li>
+                            <li><span>Diploma</span><br>DSUE Rajokari Institute Of Technology  <span class="text-red">(Jul 2017 - Jun 2020)</span></li>
+                            <li><span>Matrix</span><br>CBSE Board Delhi <span class="text-red">(2016-2017)</span></li>         
+                        </ul>
+                       </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------Services------------------ -->
+     <div id="services">
+        <div class="container">
+            <h1>My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Website Design using of HTML, CSS, JavaScrips, React.</p>
+                    <p>Application Design using of React Native.</p>
+                    <p>Website AMC Provide.</p>
+                </div>                
+                <div>
+                    <i class="fa-solid fa-network-wired"></i>
+                    <h2>Computer Hardware & Networking</h2>
+                    <p>Computer Hardware Troubleshooting & Repaire.</p>
+                    <p>Computer Software Installation.</p>
+                    <p>Networking Related query resolution.</p>
+                </div>                
+                <div>
+                    <i class="fa-solid fa-video"></i>
+                    <h2>Video & Image Editing</h2>
+                    <p>High quality videos and image editing </p>
+                    <p>Video shooting.</p>
+                    <p>Handle youtube and Instapages.</p>
+                </div>                
+
+            </div>
+        </div>
+     </div>
+
+     <div id="portfolios">
+        <div class="container">
+            <h1 class="sub">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+
+                    <img src="./img/Developer.png" alt="">
+                    <div class="layer">
+                        <h3>Web Designing</h3>
+                        <p>Providing full Web Developement Support and Also Builiding the Website using Latest Technologies Like React, MernStack, MongoDB, NodeJs, etc.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./img/ShashiWork.jpg" alt="">
+                    <div class="layer">
+                        <h3>Networking</h3>
+                        <p>Providing full Network support, also configure scratch to full flashed network in a office and also support Firewall, Server, Office support, etc.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./img/ITS3.png" alt="">
+                    <div class="layer">
+                        <h3>Full IT Support</h3>
+                        <p>Providing Hardware, Software & Network all Support and we have a Dedicated Team for all these things.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+               
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+     <!-- -----------------contacts---------------------------- -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    
+                    <p><i class="fa-brands fa-telegram"></i> sb.kushwaha000@gmail.com</p>
+                    
+                    <p> <i class="fa-solid fa-phone-volume"></i> +91 9718873637</p>
+                    <div class="Social-icons">
+                        <a href="https://youtube.com/@sbkushwahavlogs3335?si=eYHpEkdbgAsz6Nj9"><i class="fa-brands fa-youtube"></i></a>
+                        
+                        <a href="https://www.linkedin.com/in/shashi-bhushan-b9a659219/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="img/Shashi bhushan Front end resume'.pdf" download="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+
+                   
+                    </script>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright  &copy; Reserved by Shashi Kushwaha</p>
+
+        </div>
+     </div>
+
+
+
+
+
+
+
+
+
+
+     <!-- Js Libraries -->
+     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+     <script>
+         var typed = new Typed('#element', {
+           strings: ['Web Designer', 'React Developer','Hardware Engineer', 'Network Engineer', 'Video Editor'],
+           typeSpeed: 80,
+         });
+
+
+    </script>
+    <script>
+        var tabLinks =document.getElementsByClassName('tab-links');
+        var tabContents =document.getElementsByClassName('tab-contents');
+
+        function opentab(tabName){
+            for(tabLink of tabLinks){
+                tabLink.classList.remove('active-link');
+            }
+            for(tabContent of tabContents){
+                tabContent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabName).classList.add('active-tab');
+        }
+    </script>
+
+    <script>
+        let sideMenu=document.getElementById('sideMenu');
+        function openMenu(){
+            sideMenu.style.right='0';
+        }
+        function closeMenu(){
+            sideMenu.style.right='-240px';
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxRvlTLEhYiHE0vcJHSM5Xyy0d2csf9QqeqqV43mFZMIiDMH7xYZ1ZBGEDmDHV4PuzC/exec'
+
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            const msg=document.getElementById('msg');
+
+            msg.innerHTML="Message send Successfully"
+            setTimeout(()=>{
+                msg.innerHTML='';
+            },3000)
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+
+
+</body>
+</html>
